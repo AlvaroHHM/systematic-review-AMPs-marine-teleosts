@@ -1,0 +1,27 @@
+id,study,species,d1_rep,d2_sra,d3_depth,d4_val,d5_design,notes,overall
+1,Zhang et al. (2021),Sebastes schlegelii,Low,Low,Low,Low,Low,"Illumina RNA-Seq, n=3 biological replicates, E. tarda infection time-course, qRT-PCR validation, NCBI SRA deposited.",Low
+2,Choi et al. (2025),Platichthys stellatus,Low,Moderate,Low,Low,Low,"Liver transcriptome, novel pleurocidin identified, synthetic peptide MIC & functional assays, qRT-PCR.",Low (Minor concerns)
+3,Jeon et al. (2026),Platichthys stellatus,Low,Moderate,Low,Low,Low,"Pteroicidin-like peptide from flounder transcriptome, truncation/substitution, MIC, low hemolysis (<5%).",Low (Minor concerns)
+4,Bo et al. (2019),Sebastiscus marmoratus,Low,Low,Low,Low,Low,"Liver transcriptome, 6 AMPs identified, LPS challenge time-course, synthetic LEAP-2 & Moronecidin MIC/cytotoxicity assays.",Low
+5,Ferez-Puche et al. (2024),Sparus aurata,Low,Low,Low,Low,Low,"Novel defb2 gene, n=4 replicates, tissue distribution & V. harveyi challenge, qRT-PCR.",Low
+6,Umasuthan et al. (2016),Oplegnathus fasciatus,Low,Low,Low,Low,Low,"Of-Pis1 genomic/transcriptomic, n=3 replicates, broad-spectrum MIC antimicrobial assays, qRT-PCR.",Low
+7,Fu et al. (2022),Scophthalmus maximus,Low,Low,Low,Low,Low,"Intestinal lncRNA/mRNA RNA-Seq, V. anguillarum infection (0-48h), n=3, histopathology & qRT-PCR.",Low
+8,Zheng et al. (2018),Larimichthys crocea,Low,Low,Low,Low,Low,"Liver transcriptome under Cryptocaryon irritans infection, 7 DE AMPs, qRT-PCR validation.",Low
+9,Machado et al. (2020),Four marine teleosts,Low,Low,Low,Moderate,Low,"Scientific Data, liver transcriptomes of 4 marine species, high BUSCO (81-86%), N50 >2.5kb, public SRA.",Low (Minor concerns)
+10,Liang et al. (2022),Alosa sapidissima,Low,Low,Low,Low,Low,"Illumina + PacBio Iso-Seq full-length transcriptome during early development (embryo, larva, juvenile), qRT-PCR.",Low
+11,Guerrero-Tortolero et al. (2021),Seriola rivoliana,Low,Low,Low,Low,Low,"Time-course larval RNA-Seq (d0 to d4 starvation), n=3 pools per stage, qRT-PCR validation.",Low
+12,Yúfera et al. (2012),Sparus aurata,Moderate,Low,Moderate,Moderate,Low,"454 pyrosequencing of larval stages (hatching to 60 dpe), 68k contigs, GBrowse/BLAST server.",Moderate
+13,Calduch-Giner et al. (2016),Dicentrarchus labrax,Low,Low,Low,Low,Low,"Intestinal segment-specific transcriptomics (anterior, middle, posterior), >1900 DEGs, GEO deposited, qPCR.",Low
+14,Miccoli et al. (2021),Dicentrarchus labrax,Low,Moderate,Low,Low,Low,"Intestinal gammadelta T cells (TRgamma+) along development & microalgae diet, qPCR & immunohistochemistry.",Low (Minor concerns)
+15,Anderson et al. (2018),Epinephelus coioides,Low,Low,Low,Low,Low,"Larval metamorphosis transcriptomics (12, 18, 50 dpe), digestive enzyme & receptor profiling, qPCR.",Low
+16,Darias et al. (2008),Dicentrarchus labrax,Low,Moderate,Moderate,Low,Low,"Microarray profiling across larval development (7-43 dpe), n=3 pools per stage, qPCR validation.",Moderate
+17,Yan et al. (2023),Sebastes schlegelii,Low,Low,Low,Low,Low,"Intestinal lncRNA/mRNA sequencing under Edwardsiella tarda infection, 9311 lncRNAs, qRT-PCR.",Low
+18,Xue et al. (2026),Sebastes schlegelii,Low,Low,Low,Low,Low,"Single-cell RNA-seq (scRNA-seq) of intestinal epithelium under E. piscicida challenge, cell type atlas & actin polarization.",Low
+19,Pomianowski et al. (2021),Platichthys flesus,Low,Low,Low,Moderate,Low,"De novo multi-tissue transcriptome (NovaSeq6000, 500M reads), high BUSCO completeness, public SRA.",Low (Minor concerns)
+20,Najafpour et al. (2024),Sparus aurata,Low,Low,Low,Low,Low,"Data in Brief descriptor, multi-hatchery commercial larval stages (flexion, metamorphosis), SRA PRJNA956882.",Low
+21,Ferraresso et al. (2008),Sparus aurata,Low,Low,Moderate,Low,Low,"Oligo microarray development & validation across early larval days (d1 vs d4), 19.7k annotated clusters, qPCR.",Low (Minor concerns)
+22,Guo et al. (2023),Multi-species database,Low,Low,Low,Low,Low,"FishGET database, 1362 curated paired-end RNA-Seq datasets from 8 teleosts, standardized pipeline & web server.",Low
+23,Li et al. (2026),Larimichthys crocea,Low,Low,Low,Low,Low,"Combined digestive transcriptome & 16S microbiome (embryo to d28), WGCNA & immune/calcium pathway profiling, qPCR.",Low
+24,Liu et al. (2026),Larimichthys crocea,Low,Low,Low,Low,Low,"Integrated digestive enzyme, transcriptome & metabolomics across 5 larval stages (DAH3 to DAH49), n=3, qPCR.",Low
+25,Wang et al. (2024),Scophthalmus maximus,Low,Low,Low,Low,Low,"Intestinal lncRNA BCO1-AS regulation under V. anguillarum infection, caspase-1 interaction, qPCR & functional assays.",Low
+26,Liu et al. (2026),iFish database (88 species),Low,Low,Low,Low,Low,"iFish multi-omics database, 9797 bulk RNA-Seq & 293 scRNA-Seq datasets across 88 teleosts, NAR database.",Low

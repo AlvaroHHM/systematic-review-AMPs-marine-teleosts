@@ -1,0 +1,25 @@
+Study,Species,Habitat,Platform,Risk_of_Bias
+Choi et al. (2025),Platichthys stellatus,Benthic,Illumina RNA-Seq,Low
+Jeon et al. (2026),Platichthys stellatus,Benthic,RNA-Seq + Design,Low (minor)
+Fu et al. (2022),Scophthalmus maximus,Benthic,Illumina RNA-Seq,Low
+Pomianowski et al. (2021),Platichthys flesus,Benthic,NovaSeq 6000,Low
+Bo et al. (2019),Sebastiscus marmoratus,Benthic-demersal,Illumina RNA-Seq,Low
+Umasuthan et al. (2016),Oplegnathus fasciatus,Benthic-demersal,RNA-Seq + EST,Low
+Zhang et al. (2021),Sebastes schlegelii,Benthic-demersal,Illumina RNA-Seq,Low
+Yan et al. (2023),Sebastes schlegelii,Benthic-demersal,Illumina RNA-Seq,Low
+Xue et al. (2026),Sebastes schlegelii,Benthic-demersal,scRNA-Seq,Low
+Ferez-Puche et al. (2024),Sparus aurata,Demersal,RNA-Seq + qPCR,Low
+Zheng et al. (2018),Larimichthys crocea,Demersal,Illumina RNA-Seq,Low
+Yúfera et al. (2012),Sparus aurata,Demersal,454 Pyrosequencing,Moderate
+Calduch-Giner et al. (2016),Dicentrarchus labrax,Demersal,Microarray + RNA-Seq,Low
+Darias et al. (2008),Dicentrarchus labrax,Demersal,Microarray,Moderate
+Najafpour et al. (2024),Sparus aurata,Demersal,Illumina RNA-Seq,Low
+Ferraresso et al. (2008),Sparus aurata,Demersal,Oligo Microarray,Low (minor)
+Li et al. (2026),Larimichthys crocea,Demersal,RNA-Seq + 16S,Low
+Liu et al. (2026a),Larimichthys crocea,Demersal,RNA-Seq + Metabolomics,Low
+Anderson et al. (2018),Epinephelus coioides,Demersal-arrecifal,Illumina RNA-Seq,Low
+Machado et al. (2020),Multi-species (4),Pelagic,Illumina RNA-Seq,Low (minor)
+Guerrero-Tortolero et al. (2021),Seriola rivoliana,Pelagic,Illumina RNA-Seq,Low (minor)
+Liang et al. (2022),Alosa sapidissima,Pelagic-anadromous,Illumina + PacBio,Low
+Guo et al. (2023),Multi-species (8),Comparative,Meta-assembly,Low (minor)
+Liu et al. (2026b),Multi-species (88),Comparative,Multi-omics,Low

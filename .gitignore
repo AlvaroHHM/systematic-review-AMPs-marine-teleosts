@@ -1,0 +1,11 @@
+*.tmp
+*.log
+*.html
+.~lock.*
+.DS_Store
+Thumbs.db
+.Rhistory
+.RData
+.Rproj.user/
+backups/
+backup_199_original/
