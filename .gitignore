@@ -9,3 +9,6 @@ Thumbs.db
 .Rproj.user/
 backups/
 backup_199_original/
+
+# Backup files
+*.bak
