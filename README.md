@@ -145,3 +145,36 @@ If you use this repository, data, or scripts in your work, please cite:
   year    = {2026},
   note    = {Manuscript submitted}
 }
+
+Machine-readable citation metadata is available in [`CITATION.cff`](CITATION.cff).
+
+---
+
+## License
+
+This work is licensed under a **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. You are free to share and adapt the material with appropriate attribution.
+
+See [LICENSE](LICENSE) for details.
+
+---
+
+## Contact
+
+**Álvaro Hernández Montiel**
+- Email: a334571@uabc.edu.mx
+- ORCID: [0000-0001-6125-0087](https://orcid.org/0000-0001-6125-0087)
+- Affiliation: Universidad Autónoma de Baja California (UABC) / CICESE
+
+**Co-authors:**
+- Ivone Giffard-Mena (ORCID: [0000-0003-1688-0703](https://orcid.org/0000-0003-1688-0703))
+- Carlos Brizuela (ORCID: [0000-0003-4621-0380](https://orcid.org/0000-0003-4621-0380))
+
+---
+
+## Acknowledgments
+
+The authors acknowledge the use of the **Rayyan** platform for systematic review screening and the **PRISMA 2020** guidelines for the methodological framework. Infrastructure and technical support were provided by UABC and CICESE.
+
+---
+
+**Last update:** October 2026
