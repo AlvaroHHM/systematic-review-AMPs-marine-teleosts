@@ -39,16 +39,23 @@ Methodological quality assessment across the 24 included transcriptomic studies,
 
 ## Figure 3 — Ontogenetic Succession of Mucosal Immunity
 
-Timeline figure depicting three conserved developmental phases in marine teleost larvae:
+**Full caption (as it appears in the manuscript):**
 
-1. **Lecithotrophic phase (0–3 dpe):** dominated by maternally derived transcripts (UBIM/S30FAU) and yolk reserves.
-2. **Live feed transition phase (4–12 dpe):** triggered by rotifer and *Artemia* ingestion, with sequential microbial colonization (*Pseudoalteromonas* → *Stenotrophomonas* → *Cohaesibacter*) and upregulation of lectins (LEG3) and chemokines (CCL11, CCL20).
-3. **Post-flexion/weaning phase (15+ dpe):** characterized by formulated feed introduction, *Psychrobacter* dominance in the gut microbiome, and maturation of pore-forming piscidins, β-defensins, and dual digestive-immune enzymes (PA2G1B).
+> **Figure 3.** Ontogenetic succession of mucosal immunity in marine teleost larvae: coupling of feed transition, microbial succession, and AMP expression waves. Three conserved developmental phases are depicted:
+>
+> **(i) Lecithotrophic phase (0–3 dpe):** dominated by maternally derived transcripts (UBIM/S30FAU) and yolk reserves.
+>
+> **(ii) Live feed transition phase (4–12 dpe):** triggered by rotifer and *Artemia* ingestion, with sequential microbial colonization (*Pseudoalteromonas* → *Stenotrophomonas* → *Cohaesibacter*) and upregulation of lectins (LEG3) and chemokines (CCL11, CCL20).
+>
+> **(iii) Post-flexion/weaning phase (15+ dpe):** characterized by formulated feed introduction, *Psychrobacter* dominance in the gut microbiome, and maturation of pore-forming piscidins, β-defensins, and dual digestive-immune enzymes (PA2G1B).
+>
+> Gut compartmentalization emerges during the post-flexion phase, with anterior/midgut segments specialized for nutrient absorption and the posterior gut concentrating immune effectors, lysosome-rich enterocytes, and BEST4+ cells (Calduch-Giner et al., 2016; Xue et al., 2026; Li et al., 2026; Liu et al., 2026a).
 
-Gut compartmentalization emerges during the post-flexion phase, with anterior/midgut segments specialized for nutrient absorption and the posterior gut concentrating immune effectors, lysosome-rich enterocytes, and BEST4+ cells.
-
-- **Format:** PDF (vectorial)
+- **Format:** PNG (300 dpi) + PDF (vectorial)
 - **Reference in manuscript:** Figure 3 (Discussion 4.2)
+- **Reproducible script:** `08_scripts/R/generate_figure3_ontogenetic.R`
+- **Color palette:** `ggsci::pal_aaas` (consistent with Figure 2)
+- **Dependencies:** `ggplot2`, `cowplot`, `ggsci`, `ggtext`, `ragg`
 
 ## Graphical Abstract
 
@@ -62,11 +69,12 @@ Visual summary integrating the **Digestive Immunity Hypothesis** with habitat-dr
 - **Vectorial figures** (SVG, PDF) preserve infinite resolution and are ideal for journal submission and print.
 - **Figure 1** is provided as SVG to preserve editability (Inkscape, Adobe Illustrator, or any SVG-compatible editor).
 - **Figures 2 and 3** are provided as PDF, the preferred format for Elsevier, Wiley, Frontiers, and most aquaculture/immunology journals.
-- All figures use colorblind-friendly palettes where applicable.
+- **Figure 3** is additionally provided as PNG (300 dpi) for convenience.
+- All figures use colorblind-friendly palettes where applicable (`ggsci::pal_aaas`).
 
 ## Related Resources
 
 - **PRISMA checklist:** `PRISMA_checklist_2020.md` (this folder)
 - **Audit report:** `09_audit/Auditoria_PRISMA.pdf`
 - **Risk of bias data:** `05_risk_of_bias/Table_S2_Risk_of_Bias.csv`
-- **Figure scripts:** `08_scripts/R/`
+- **Figure scripts:** `08_scripts/R/` and `08_scripts/python/`
