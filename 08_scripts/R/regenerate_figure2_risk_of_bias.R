@@ -179,26 +179,32 @@ df_domains <- df_long %>%
   ungroup()
 
 # Paleta del panel A con SWAP (Low=azul, Minor=verde)
-pal_domain <- c(
-  "Low"            = aaas_cols[1],  # AZUL (antes verde)
-  "Minor concerns" = aaas_cols[3],  # VERDE (antes azul)
+# Detectar dinámicamente qué categorías existen realmente
+existing_scores <- unique(df_domains$score_clean[df_domains$n > 0])
+
+pal_domain_full <- c(
+  "Low"            = aaas_cols[1],  # azul
+  "Minor concerns" = aaas_cols[3],  # verde
   "High"           = aaas_cols[2]   # rojo
 )
 
+# Solo quedarse con las categorías que aparecen
+pal_domain <- pal_domain_full[names(pal_domain_full) %in% as.character(existing_scores)]
+
 panel_A <- ggplot(df_domains,
                   aes(x = domain_label, y = n, fill = score_clean)) +
-  geom_col(width = 0.7, color = "white", linewidth = 0.4) +
-  geom_text(aes(label = ifelse(n > 0, n, ""), y = label_y),
-            color = "white", fontface = "bold", size = 3.2) +
-  scale_fill_manual(values = pal_domain, name = NULL) +
-  scale_y_continuous(limits = c(0, n_studies + 1),
-                     breaks = seq(0, n_studies, 5),
+  geom_col(width = 0.7, color = "white", linewidth = 0.4, alpha = 0.8) +
+  scale_fill_manual(values = pal_domain, name = NULL, drop = TRUE) +
+  scale_y_continuous(limits = c(0, 24),
+                     breaks = seq(0, 24, 2),
                      expand = c(0, 0)) +
   labs(x = NULL, y = "Number of studies") +
   theme(
     legend.position = "top",
     axis.text.x = element_text(size = 8.5, lineheight = 0.95),
-    panel.grid.major.x = element_blank()
+    axis.text.y = element_text(size = 8),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank()
   )
 
 # =============================================================================
@@ -216,7 +222,7 @@ df_overall <- df %>%
   )
 
 panel_B <- ggplot(df_overall, aes(x = 2, y = pct, fill = overall_pretty)) +
-  geom_col(width = 1, color = "white", linewidth = 1) +
+  geom_col(width = 1, color = "white", linewidth = 1, alpha = 0.8) +
   coord_polar(theta = "y", start = 0, direction = -1) +
   xlim(0.5, 2.5) +
   scale_fill_manual(values = pal_risk, name = NULL) +
@@ -226,7 +232,7 @@ panel_B <- ggplot(df_overall, aes(x = 2, y = pct, fill = overall_pretty)) +
   geom_text(
     data = df_overall,
     aes(x = 2.35, y = 1 - ymid, label = label),
-    size = 2.9, fontface = "bold", color = "grey20",
+    size = 4, fontface = "bold", color = "grey20",  # ← era 2.9, ahora 4
     inherit.aes = FALSE
   ) +
   theme_void(base_size = 11) +
@@ -243,11 +249,12 @@ df_habitat <- df %>%
 panel_C <- ggplot(df_habitat,
                   aes(x = n, y = habitat_grouped,
                       fill = habitat_grouped)) +
-  geom_col(width = 0.7, color = "white", linewidth = 0.4) +
+  geom_col(width = 0.7, color = "white", linewidth = 0.4, alpha = 0.8) +
   geom_text(aes(label = sprintf("%d (%.1f%%)", n, 100 * pct)),
             hjust = -0.15, size = 3.2, fontface = "bold") +
   scale_fill_manual(values = pal_habitat, guide = "none") +
-  scale_x_continuous(limits = c(0, max(df_habitat$n) + 3),
+  scale_x_continuous(limits = c(0, 12),
+                     breaks = seq(0, 12, 2),
                      expand = c(0, 0)) +
   labs(x = "Number of studies", y = NULL) +
   theme(panel.grid.major.y = element_blank())
@@ -257,7 +264,7 @@ panel_C <- ggplot(df_habitat,
 # =============================================================================
 
 fig2 <- panel_A + panel_B + panel_C +
-  plot_layout(widths = c(1.5, 1.1, 1.2)) +
+  plot_layout(widths = c(1.5, 1.1, 1.6)) +
   plot_annotation(
     tag_levels = list(c("A)", "B)", "C)")),
     theme = theme(
